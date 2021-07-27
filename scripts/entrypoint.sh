@@ -6,7 +6,7 @@ fi
 
 pacman -Sy
 namcap PKGBUILD
-makepkg -fC --syncdeps --noconfirm
+sudo pacman -Syyu --noconfirm && makepkg -fC --syncdeps --noconfirm
 
 echo "==============="
 echo "Package created:"
