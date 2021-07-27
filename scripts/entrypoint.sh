@@ -4,7 +4,7 @@ if [ -d "/github" ]; then
 sudo chown -R build /github/workspace /github/home
 fi
 
-pacman -Sy
+sudo pacman -Sy
 namcap PKGBUILD
 sudo pacman -Syyu --noconfirm && makepkg -fC --syncdeps --noconfirm
 
