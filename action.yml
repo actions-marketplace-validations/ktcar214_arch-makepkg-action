@@ -6,4 +6,4 @@ branding:
   color: blue
 runs:
   using: docker
-  image: docker://ktcar214/makepkg:v1.0.5
+image: docker://ktcar214/makepkg:v1.0.6
