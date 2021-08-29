@@ -7,8 +7,13 @@ fi
 pwd
 export MAKEFLAGS="-j$(nproc)"
 namcap PKGBUILD
-gpg --keyserver keyserver.ubuntu.com --recv-keys 647F28654894E3BD457199BE38DBBDC86092693E
+if test -f "./prebuild.sh" ; then
+bash ./prebuild.sh
+fi
 sudo pacman -Syu --noconfirm && makepkg -fC --syncdeps --noconfirm
+if test -f "./postbuild.sh" ; then
+bash ./postbuild.sh
+fi
 
 echo "==============="
 echo "Package created:"
