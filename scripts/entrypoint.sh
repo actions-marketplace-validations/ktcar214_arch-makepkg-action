@@ -24,5 +24,5 @@ fi
 
 echo "==============="
 echo "Package created:"
-ls -lah *.pkg.tar.zst`
+ls -lah *.pkg.tar.zst
 echo "==============="
