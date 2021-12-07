@@ -1,5 +1,5 @@
 ---
-name: "Archlinux MAKEPKG action"
+name: "Archlinux MAKEPKG builder"
 description: "Builds PKGBUILD definition"
 branding:
   icon: package
