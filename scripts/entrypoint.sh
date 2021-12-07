@@ -5,7 +5,7 @@ sudo chown -R build /github/workspace /github/home
 fi
 
 pwd
-export MAKEFLAGS="-j$(nproc)"
+echo MAKEFLAGS=\"-j$(($(nproc)+1))\" | sudo tee -a /etc/makepkg.conf > /dev/null
 namcap PKGBUILD
 
 if test -f "./prebuild.sh" ; then
