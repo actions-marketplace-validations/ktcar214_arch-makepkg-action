@@ -12,7 +12,7 @@ if test -f "./prebuild.sh" ; then
 bash ./prebuild.sh
 fi
 
-if test -f "./prebuild.sh" ; then
+if test -f "./build.sh" ; then
 bash ./build.sh
 else
 sudo pacman -Syu --noconfirm && makepkg -fC --syncdeps --noconfirm
